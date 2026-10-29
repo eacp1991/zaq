@@ -30,6 +30,7 @@ defmodule Zaq.MixProject do
       ],
       listeners: [Phoenix.CodeReloader],
       test_coverage: [tool: ExCoveralls],
+      test_ignore_filters: [~r"^test/repro/.*\.exs$"],
       docs: docs()
     ]
   end
